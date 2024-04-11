@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 20px;
+            background-color: #c84cd3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c947c9;
+        }
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <title>Binární sčítání</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        input[type="text"] {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 8px 20px;
+            background-color: #c54ec9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #b540c0;
+        }
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="color: rgb(194, 66, 194);">Binární sčítání</h2>
+    <input type="text" id="binary1" placeholder="První binární číslo">
+    <br>
+    <input type="text" id="binary2" placeholder="Druhé binární číslo">
+    <br>
+    <button onclick="addBinary()">Sčítat</button>
+    <div id="result"></div>
+
+    <script>
+        function addBinary() {
+            var binary1 = document.getElementById("binary1").value;
+            var binary2 = document.getElementById("binary2").value;
+
+            var sum = parseInt(binary1, 2) + parseInt(binary2, 2);
+
+            document.getElementById("result").innerText = "Výsledek: " + sum.toString(2);
+        }
+    </script>
+</body>
+</html>
